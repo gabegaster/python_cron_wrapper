@@ -1,11 +1,19 @@
-###What###
-Import this decorator and cron will only email you when the method first fails and then when it starts working again, giving a report of the number of fails and error logs.
+###What
+Import this decorator and cron will only email you when the
+method first fails and then when it starts working again, giving a
+report of the number of fails and error logs.
 
-###Why###
-Helpful if you do not want to get 58 emails if a site you are scraping is down for 58 minutes.
+Instead of 58 email messages, cron will now only email you once when
+it fails the first time, and once when it stops failing -- with a
+single report of all the fails.
 
-###It's easy###
-Just add the cron_manager decorator, to let cron quietly, smartly and succinctly report errors.
+###Why
+Helpful if you do not want to get 58 emails if a site you
+are scraping is down for 58 minutes.
+
+###It's easy
+Just add the cron_manager decorator, to let cron
+quietly, smartly and succinctly report errors.
 
     from cron_manager import cron_manager
 
